@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+            margin-top: 100px;
+            padding: 30px;
+            background: e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- we will use thymleaf attribute to display the content -->
+        <h1 data-th-text="${name}">welcome to home page</h1>
+        <p>youtube Channel:  <span data-th-text="${YoutubeChannel}"></span></p>
+        <p>Github Repo Link : <span data-th-text="${GithubRepository}"></span></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, incidunt laboriosam! Ad repudiandae mollitia quae, rem iusto amet, sunt illo, iste nesciunt quod nostrum veniam magnam. Pariatur eaque maiores quisquam!</p>
+
+    </div>
+    
+</body>
+</html>
