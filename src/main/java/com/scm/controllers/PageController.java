@@ -30,6 +30,11 @@ public class PageController {
     return "about";
   }
   //services
+  @RequestMapping("/services")
+  public String servicesPage(){
+    System.out.println("services page loading");
+    return "services";
+  }
 
 
 
