@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+// some javascript are required by all pages so ther we can use the fragment 
+//fragment is the part of the thymleaf
+
 @Controller
 public class PageController {
 
@@ -19,5 +22,16 @@ public class PageController {
     model.addAttribute("GithubRepository", "https://github.com/ricky08sirus/SCM2.0");
     return "home";
   }
+
+  //about route
+  @RequestMapping("/about")
+  public String aboutPage(){
+    System.out.println("About page Handler");
+    return "about";
+  }
+  //services
+
+
+
 
 }
