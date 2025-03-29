@@ -2,16 +2,25 @@
 <html 
 lang="en" 
 xmlns:th="http://www.thymeleaf.org"
-th:fragment="parent">
+th:fragment="parent(content,title,script)">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 <body>
     Base page content
+    <section data-th-replace="${content}">
+
+    </section>
+    <!-- main content -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script data-th-replace="${script}">
+        console.log("hello world");
+    </script>
     
 </body>
 </html>
